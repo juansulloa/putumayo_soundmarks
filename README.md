@@ -1,4 +1,4 @@
-# Soundmark detection
+# Putumayo soundmark detection
 
 The objective of this repository is to provide a modular and flexible framework to fit predictive models able to detect automatically biotic and abiotic soundmarks in complex acoustic environments. The process follows four main steps: (1) annotate samples, (2) structure audio data, (3) tune model, (4) make inferences on new data.
 
@@ -14,7 +14,7 @@ To run these experiments, it is highly recommended to work in a new virtual envi
 - scikit-maad
 - scikit-learn
 
-All dependencies are listed in `./env/anfibia.yml`, a text file that can be used by Anaconda to create a new virtual environment with everything you need:
+All dependencies are listed in `./conda_environment/anfibia.yml`, a text file that can be used by Anaconda to create a new virtual environment with everything you need:
 
 ```
 conda env create -f anfibia.yml
@@ -58,4 +58,4 @@ References:
 
 ## 4. Make inferences on new data
 
-
+Inference on new data is performed with trained models found in the folder `./models`. You will also need to load the preprocessing options used to trained the model. The step by step procedure is found in the script `./scripts/model_predict.py`.
